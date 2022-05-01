@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:spotify_ui/navigation/widgets/album_card.dart';
-import 'package:spotify_ui/navigation/widgets/song_card.dart';
+import 'package:spotify_ui/widgets/album_card.dart';
+import 'package:spotify_ui/widgets/song_card.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
