@@ -11,7 +11,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Spotify UI Demo',
-      debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.dark,
       darkTheme: ThemeData(
         scaffoldBackgroundColor: Colors.black,
@@ -29,7 +28,7 @@ class MyApp extends StatelessWidget {
           unselectedItemColor: Colors.white38,
         ),
       ),
-      home: Navbar(),
+      home: const Navbar(),
     );
   }
 }

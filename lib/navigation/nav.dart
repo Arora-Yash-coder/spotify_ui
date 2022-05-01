@@ -5,6 +5,8 @@ import 'package:spotify_ui/screens/profile.dart';
 import 'package:spotify_ui/screens/search.dart';
 
 class Navbar extends StatefulWidget {
+  const Navbar({Key? key}) : super(key: key);
+
   @override
   _NavbarState createState() => _NavbarState();
 }
