@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:spotify_ui/navigation/widgets/album_card.dart';
+import 'package:spotify_ui/widgets/album_card.dart';
 
 class AlbumView extends StatefulWidget {
   final ImageProvider image;
