@@ -239,7 +239,10 @@ class _AlbumViewState extends State<AlbumView> {
                 horizontal: 16,
                 vertical: 8,
               ),
-              child: SafeArea(
+              child: Padding(
+                padding: EdgeInsets.only(
+                  top: MediaQuery.of(context).padding.top,
+                ),
                 child: SizedBox(
                   height: 40,
                   width: MediaQuery.of(context).size.width,
@@ -263,7 +266,7 @@ class _AlbumViewState extends State<AlbumView> {
                         duration: const Duration(milliseconds: 250),
                         opacity: showTopBar ? 1 : 0,
                         child: Text(
-                          "Ophelia",
+                          "Hello World",
                           style: Theme.of(context).textTheme.headline6,
                         ),
                       ),
