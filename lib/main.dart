@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:spotify_ui/screens/homepage.dart';
+import 'package:spotify_ui/navigation/nav.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,11 +10,26 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+      title: 'Spotify UI Demo',
+      debugShowCheckedModeBanner: false,
+      themeMode: ThemeMode.dark,
+      darkTheme: ThemeData(
+        scaffoldBackgroundColor: Colors.black,
+        brightness: Brightness.dark,
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+          backgroundColor: Colors.white10,
+          type: BottomNavigationBarType.fixed,
+          selectedLabelStyle: TextStyle(
+            fontSize: 12,
+          ),
+          unselectedLabelStyle: TextStyle(
+            fontSize: 12,
+          ),
+          selectedItemColor: Colors.white,
+          unselectedItemColor: Colors.white38,
+        ),
       ),
-      home: const MyHomePage(),
+      home: Navbar(),
     );
   }
 }
